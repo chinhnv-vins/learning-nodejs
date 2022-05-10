@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<body>
+
+<h2>JavaScript This</h2>
+
+<p id="demo"></p>
+
+<br>
+
+<p id="textColors"></p>
+
+<br>
+
+<p id="textColors2"></p>
+
+<script>
+const arrayText = ["Hello", "World", "This", "World"];
+
+document.getElementById("demo").innerHTML = arrayText;
+
+const fruits = ["Red", "Green", "Yellow", "Blue", "Black", "White", "Pink"];
+
+let textColors = "<ul>";
+
+for (i = 0; i < fruits.length; i++) {
+    textColors += "<li>" + fruits[i] + "</li>";
+}
+
+textColors += "</ul>";
+
+document.getElementById("textColors").innerHTML = textColors;
+
+let textColors2 = "<ul>";
+
+fruits.forEach(myFunction);
+
+textColors2 += "</ul>";
+
+function myFunction(val) {
+    textColors2 += "<li>Color " + val + "</li>";
+}
+document.getElementById("textColors2").innerHTML = textColors2;
+</script>
+
+</body>
+</html>

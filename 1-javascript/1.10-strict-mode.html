@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<body>
+
+<h2>JavaScript Strict Mode</h2>
+
+<p>Check tính đúng đắn của dữ liệu truyền vào</p>
+
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<p id="demo">demo</p>
+<script>
+"use strict";
+myFunction();
+
+function myFunction() {
+  let y = 3.14;   // This will cause an error (y is not defined)
+  return y;
+}
+
+document.getElementById("demo").innerHTML = myFunction();
+</script>
+
+</body>
+</html>

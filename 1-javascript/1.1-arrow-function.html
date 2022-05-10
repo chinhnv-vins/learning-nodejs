@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<body>
+
+<h2>JavaScript Arrow function</h2>
+
+<p>Để gán biến và điều hướng giá trị được truyền vào nhanh gọn hơn so với viết hàm thông thường</p>
+
+<p id="arrow"></p>
+
+<p id="show-result-number"></p>
+
+<p id="show-example-call-function-es5"></p>
+
+<p id="show-example-call-function-es6"></p>
+
+<script>
+var hello;
+
+hello = (name) => {
+  return "Hello " + name;
+}
+
+// Add text in the result:
+document.getElementById("arrow").innerHTML = hello("arrow function");
+
+// Show calucation result
+let numbers = (x, y, z) => (x * y * z)/2;
+document.getElementById("show-result-number").innerHTML = numbers(2, 3, 4);
+
+// show-example-call-function-es5
+var callFunctionEs5 = function (a, b) {
+  return a * b;
+}
+document.getElementById("show-example-call-function-es5").innerHTML = callFunctionEs5(2, 3);
+
+// show-example-call-function-es6
+var callFunctionEs6 = (a, b) => {
+  return a + b;
+}
+document.getElementById("show-example-call-function-es6").innerHTML = callFunctionEs6(4, 5);
+
+</script>
+
+</body>
+</html>

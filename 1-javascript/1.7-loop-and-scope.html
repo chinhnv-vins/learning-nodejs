@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<body>
+
+<h2>JavaScript Loop and Scope</h2>
+
+<p id="demo"></p>
+
+<br>
+
+<p id="demo2"></p>
+
+<br>
+
+<!-- let -->
+<p id="demo3"></p>
+
+<br>
+
+<!-- var -->
+<p id="demo4"></p>
+
+<script>
+    let arrayText = ["Hello", "World!", "This is", "This"];
+    let text = "";
+
+    for(i = 0; i < arrayText.length; i++) {
+        text += arrayText[i] + "<br>";
+    }
+
+    document.getElementById('demo').innerHTML = text;
+
+    let text2 = "";
+
+    for(i = 0; i < 5; i++) {
+        text2 += "Đây là số thứ " + i + " trong danh sách" + "<br>";
+    }
+
+    document.getElementById('demo2').innerHTML = text2;
+
+    // let
+    let numberScope = 5;
+
+    for(let numberScope = 0; numberScope < 10; numberScope++) {
+
+    }
+
+    document.getElementById('demo3').innerHTML = numberScope;
+
+    // var
+    var numberScope2 = 5;
+
+    for(var numberScope2 = 0; numberScope2 < 10; numberScope2++) {
+
+    }
+
+    document.getElementById('demo4').innerHTML = numberScope2;
+</script>
+
+</body>
+</html>
